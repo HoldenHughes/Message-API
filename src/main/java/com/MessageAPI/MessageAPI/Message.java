@@ -27,9 +27,8 @@ public class Message {
     }
 
     // Return a Long for the number of words in String message
+    // example: message = "I want to walk my ..  dog 1 " -> 6
     public Long getWordCount(){
-        String message = this.message;
-        return Arrays.stream(message.split(" ")).count();
+        return Arrays.stream(this.message.split("[^a-zA-Z]+")).count();
     }
-
 }

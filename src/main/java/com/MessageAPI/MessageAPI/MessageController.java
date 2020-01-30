@@ -15,7 +15,7 @@ import java.util.List;
 public class MessageController {
 
     @Autowired
-    public MessageRepository messageRepository;
+    private MessageRepository messageRepository;
 
     @RequestMapping(path = "/message", method = RequestMethod.POST)
     public ResponseEntity<HashMap> wordCount(@Valid @RequestBody Message message) {

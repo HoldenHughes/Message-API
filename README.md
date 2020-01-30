@@ -28,12 +28,12 @@ $ java -jar Message-API-0.0.1-SNAPSHOT.jar <br>
 The service should be running on localhost:8080
 ### Send Request
 From postman send a POST request to http://localhost:8080/message <br>
-with a body of {"id":"123","message":"words words words"} <br>
+with a body of {"id":"123","message":"I want to walk my ..  dog 1 "} <br>
 The response should be: <br>
 Status: 200 OK <br>
 Body: <br>
 {<br>
-    "count":3 <br>
+    "count":6 <br>
 }
 
 
